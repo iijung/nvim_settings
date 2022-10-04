@@ -11,7 +11,7 @@ bash ./install.sh
 - `:AstroUpdate` : 최신 버전 업데이트
 ```sh
 cp -r ~/.config/nvim/lua/user_example/ ~/.config/nvim/lua/user/
-sed -i '' 's/version = \"latest\"/version = \"v.1.10.0\"/' ~/.config/nvim/lau/user/init.lua
+sed -i '' 's/version = \"latest\"/version = \"v.1.10.0\"/' ~/.config/nvim/lua/user/init.lua
 ```
 
 ## How To Use
