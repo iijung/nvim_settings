@@ -12,6 +12,7 @@ bash ./install.sh
 ```sh
 cp -r ~/.config/nvim/lua/user_example/ ~/.config/nvim/lua/user/
 sed -i '' 's/version = \"latest\"/version = \"v1.10.0\"/' ~/.config/nvim/lua/user/init.lua
+sed -i '' 's/channel = \"nightly\"/channel = \"stable\"/' ~/.config/nvim/lua/user/init.lua
 ```
 
 ## How To Use
