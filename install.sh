@@ -57,7 +57,7 @@ if ! which nvim > /dev/null; then
 	do
 		case $yn in
 			yes)
-				curl -fLO https://github.com/neovim/neovim/releases/download/stable/nvim-macos.tar.gz
+				curl -fLO https://github.com/neovim/neovim/releases/download/v0.8.0/nvim-macos.tar.gz
 				tar xzf nvim-macos.tar.gz -C $HOME
 				rm -f nvim-macos.tar.gz
 				echo "export PATH=$HOME/nvim-macos/bin:\$PATH" >> ~/.zshrc

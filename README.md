@@ -11,8 +11,11 @@ bash ./install.sh
 - `:AstroUpdate` : 최신 버전 업데이트
 ```sh
 cp -r ~/.config/nvim/lua/user_example/ ~/.config/nvim/lua/user/
-sed -i '' 's/version = \"latest\"/version = \"v1.10.0\"/' ~/.config/nvim/lua/user/init.lua
-sed -i '' 's/channel = \"nightly\"/channel = \"stable\"/' ~/.config/nvim/lua/user/init.lua
+
+# fix astronvim 2.0 error
+sed -i '' 's/branch = \"main\"/branch = \"nightly\"/' ~/.config/nvim/lua/user/init.lua
+nvim +AstroUpdate
+nvim +PackerSync
 ```
 
 ## How To Use
