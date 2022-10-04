@@ -79,8 +79,8 @@ select yn in yes no
 do
 	case $yn in
 		yes)
-			mv ~/.config/nvim ~/.config/nvim.bak;
-			mv ~/.local/share/nvim/site ~/.local/share/nvim/site.bak;
+			if [ -d ~/.config/nvim ]; then				mv ~/.config/nvim ~/.config/nvim.bak;						fi;
+			if [ -d ~/.local/share/nvim/site ]; then	mv ~/.local/share/nvim/site ~/.local/share/nvim/site.bak;	fi;
 			git clone https://github.com/AstroNvim/AstroNvim ~/.config/nvim;
 			nvim +PackerSync;
 			echo "${LGREEN}Done :D${NC}"
