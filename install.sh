@@ -62,7 +62,7 @@ if ! which nvim > /dev/null; then
 				rm -f nvim-macos.tar.gz
 				echo "export PATH=$HOME/nvim-macos/bin:\$PATH" >> ~/.zshrc
 				source ~/.zshrc
-				echo "${LGREEN}you can use nvim now${NC}"
+				echo "${LGREEN}you can use nvim now. run 'source ~/.zshrc'${NC}"
 				;;
 			no) exit;;
 		esac
