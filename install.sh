@@ -31,10 +31,10 @@ select font in fira hack "go website" no
 do
 	case $font in
 		fira)
-			curl -fLO "https://github.com/tonsky/FiraCode/releases/download/6.2/Fira_Code_v6.2.zip";
-			unzip -d "Fira_Code_v6.2" "Fira_Code_v6.2.zip";
-			open "Fira_Code_v6.2/ttf";
-			open "Fira_Code_v6.2/variable_ttf";
+			curl -fLO "https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.3/FiraCode.zip";
+			unzip -d "Fira_Code" "Fira_Code.zip"
+			find FiraCode -name "Fira Code*" -and ! -name "*Mono.ttf" -exec rm {} \;
+			open "Fira_Code";
 			;;
 		hack)
 			curl -fLO "https://github.com/source-foundry/Hack/releases/download/v3.003/Hack-v3.003-ttf.zip";
